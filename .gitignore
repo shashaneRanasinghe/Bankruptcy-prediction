@@ -1,5 +1,6 @@
 #cache
 Backend/__pycache__
+Backend/venv
 
 #UI
 Bankruptcy-predict/node_modules

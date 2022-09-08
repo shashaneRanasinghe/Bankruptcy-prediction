@@ -1,0 +1,9 @@
+Flask==2.2.2
+flask_cors==3.0.10
+imageio==2.21.2
+imblearn==0.0
+matplotlib==3.5.3
+numpy==1.23.2
+pandas==1.4.4
+scikit_learn==1.1.2
+seaborn==0.12.0
