@@ -3,6 +3,7 @@ import { Formik } from 'formik';
 import { useState } from 'react';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 import { RootSiblingParent } from 'react-native-root-siblings';
+import Toast from 'react-native-root-toast';
 
 
 export default function App() {
@@ -170,7 +171,7 @@ const recommend =async (values) => {
     body: body,
   };
 
-  await fetch("http://127.0.0.1:5000/predict", requestOptions)
+  await fetch("https://bank-risk-predictor.herokuapp.com/predict", requestOptions)
     .then(response =>
        response.text()
        )
@@ -180,10 +181,12 @@ const recommend =async (values) => {
         if (result.message == 0) {
           let toast = Toast.show('Not Bankrupt', {
             duration: Toast.durations.LONG,
+            position: Toast.positions.CENTER,
           });
         }else {
           let toast = Toast.show('Bankrupt', {
             duration: Toast.durations.LONG,
+            position: Toast.positions.CENTER,
           });
         }
       }
@@ -192,6 +195,7 @@ const recommend =async (values) => {
       console.log(error)
         let toast = Toast.show('Something Went Wrong.', {
           duration: Toast.durations.LONG,
+          position: Toast.positions.CENTER,
         });
       }
        );
