@@ -173,11 +173,10 @@ const recommend =async (values) => {
 
   await fetch("https://bank-risk-predictor.herokuapp.com/predict", requestOptions)
     .then(response =>
-       response.text()
+       response.json()
        )
     .then(
       result => {
-        console.log(result)
         if (result.message == 0) {
           let toast = Toast.show('Not Bankrupt', {
             duration: Toast.durations.LONG,

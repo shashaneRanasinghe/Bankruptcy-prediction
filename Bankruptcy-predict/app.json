@@ -18,16 +18,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.shashane.Bankruptcypredict"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/bank_icon1.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.shashane.Bankruptcypredict"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "owner": "shashane",
+    "extra": {
+      "eas": {
+        "projectId": "81a520ec-5cc0-4d3d-b626-1354487e4b2c"
+      }
     }
   }
 }
