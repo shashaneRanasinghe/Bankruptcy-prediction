@@ -1,2 +1,5 @@
 #cache
 Backend/__pycache__
+
+#UI
+Bankruptcy-predict/node_modules
